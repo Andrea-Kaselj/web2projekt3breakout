@@ -1,0 +1,33 @@
+{
+  "name": "web2projekt1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run clean && tsc && npm run copy-views && npm run copy-public",
+    "clean": "shx rm -rf dist",
+    "copy-views": "shx cp -r src/views/ dist",
+    "copy-public": "shx cp -r src/public/ dist/public",
+    "start": " npm run server",
+    "server": "node dist/server.js"
+  },
+  "author": "Andrea Kaselj",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "fs": "^0.0.1-security",
+    "html5": "^1.0.5",
+    "https": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.0",
+    "shx": "^0.3.4",
+    "typescript": "^5.6.3"
+  }
+}

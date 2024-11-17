@@ -1,0 +1,14 @@
+/* css reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#GameCanvas {
+    margin:20px 20px 0px 20px;
+    background-clip: content-box;
+    box-shadow: 0 0 0 20px green;
+    background-color: white;
+    overflow-y: hidden;
+}
